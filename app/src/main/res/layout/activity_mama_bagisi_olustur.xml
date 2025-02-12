@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MamaBagisiOlustur"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/topMenu"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="1dp"
+                app:cardBackgroundColor="#FFFFFF">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/buttonBack"
+                        android:layout_width="35dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="back"
+                        android:paddingLeft="10dp"
+                        android:src="@drawable/back_arrow_navigation_svgrepo_com__2_" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="9"
+                        android:gravity="center"
+                        android:paddingRight="20dp"
+                        android:text="İlan Yükle"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="294dp"
+              android:src="@drawable/photo_download_svgrepo_com" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#38b832"
+                android:gravity="center"
+                android:text="Mama Bağışı"
+                android:textColor="#FFFFFF"
+                android:textSize="21sp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#EAE9E9"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="51dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/underline"
+                        android:gravity="center"
+                        android:text="İlan Bilgileri"
+                        android:textColor="@color/black"
+                        android:textSize="25sp" />
+
+                    <EditText
+                        android:id="@+id/editTextText12"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="30dp"
+                        android:background="@drawable/edit"
+                        android:padding="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginRight="30dp"
+                        android:ems="10"
+                        android:hint="İlan Başlığı"
+                        android:inputType="text" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:layout_width="330dp"
+                        android:layout_height="65dp"
+                        android:layout_gravity="center"
+
+                        android:layout_marginTop="50dp">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/kategoritext"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/edit"
+                            android:padding="10dp"
+                            android:layout_weight="1"
+                            android:inputType="none"
+                            android:text="Hayvan Kategorisi" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <EditText
+                        android:id="@+id/mamamiktar"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginRight="30dp"
+                        android:background="@drawable/edit"
+                        android:padding="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:ems="10"
+                        android:gravity="top"
+                        android:hint="Mama Miktarı(kg/gr)"
+                        android:inputType="text" />
+
+
+                    <EditText
+                        android:id="@+id/editTextTextt"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/edit"
+                        android:padding="10dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="50dp"
+                        android:ems="10"
+                        android:gravity="top"
+                        android:hint="Açıklama"
+                        android:inputType="text" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardVieww"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#EAE9E9"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/textView34"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/underline"
+                        android:gravity="center"
+                        android:text="İletişim Bilgileri"
+                        android:textColor="@color/black"
+                        android:textSize="25sp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:layout_width="330dp"
+                        android:layout_height="65dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/autoCompleteTextView6"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:inputType="none"
+                            android:background="@drawable/edit"
+                            android:padding="10dp"
+                            android:text="Şehir" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <EditText
+                        android:id="@+id/editTextTexttt"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="30dp"
+                        android:background="@drawable/edit"
+                        android:padding="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginRight="30dp"
+                        android:ems="10"
+                        android:hint="İlçe"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/editTextNumber2"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/edit"
+                        android:padding="10dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="30dp"
+                        android:ems="10"
+                        android:hint="Telefon Numarası"
+                        android:inputType="number" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="30dp"
+                        android:onClick="ilanyukle"
+                        android:backgroundTint="#2196F3"
+                        android:text="İlanı Yükle"
+                        android:textSize="35sp">
+
+                    </Button>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.WRITE_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.WRITE_MEDIA_AUDIO" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/appiconn"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/iconcircle"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PatiApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".SifreDegis"
+            android:exported="false" />
+        <activity
+            android:name=".BiyografiEkle"
+            android:exported="false" />
+        <activity
+            android:name=".ProfilFotoIsteme"
+            android:exported="false" />
+        <activity
+            android:name=".HayvanIlanOlustur"
+            android:exported="false" />
+        <activity
+            android:name=".MamaBagisiOlustur"
+            android:exported="false" />
+        <activity
+            android:name=".HesapGiris"
+            android:exported="false" />
+        <activity
+            android:name=".MamaBagisiDetay"
+            android:exported="false" />
+        <activity
+            android:name=".BarinakKullaniciDetay"
+            android:exported="false" />
+        <activity
+            android:name=".BarinakArama"
+            android:exported="false" />
+        <activity
+            android:name=".IlanUpdate"
+            android:exported="false" />
+        <activity
+            android:name=".IlanDuzenle"
+            android:exported="false" />
+        <activity
+            android:name=".KullaniciArama"
+            android:exported="false" />
+        <activity
+            android:name=".KullaniciDetay"
+            android:exported="false" />
+        <activity
+            android:name=".BarinakHesapOlustur"
+            android:exported="false" />
+        <activity
+            android:name=".HesapKayitSorgu"
+            android:exported="false" />
+        <activity
+            android:name=".MesajEkle"
+            android:exported="false" />
+        <activity
+            android:name=".Mesajdetay"
+            android:exported="false" />
+        <activity
+            android:name=".FiltrelenmisSonuclar"
+            android:exported="false" />
+        <activity
+            android:name=".Loadingscreeen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".KaydedilenIlanlar"
+            android:exported="false" />
+        <activity
+            android:name=".IlanlarKendi"
+            android:exported="false" />
+        <activity
+            android:name=".HesapDetay"
+            android:exported="false" />
+        <activity
+            android:name=".IlanDetay"
+            android:exported="false" />
+        <activity
+            android:name=".HesapKayit"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".IlanYukleme"
+            android:exported="false" />
+    </application>
+
+</manifest>

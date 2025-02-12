@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "458720123263",
+    "project_id": "patiapp-54700",
+    "storage_bucket": "patiapp-54700.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:458720123263:android:550b03736582ea58dc624a",
+        "android_client_info": {
+          "package_name": "com.example.patiapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4HZ8KCT3NHkRbghDToX_xfxQre7IUo8E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

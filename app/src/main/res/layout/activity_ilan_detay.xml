@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".IlanDetay">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/topMenu"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                app:cardBackgroundColor="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:orientation="horizontal"
+                    android:background="@drawable/underline">
+
+                    <ImageView
+                        android:id="@+id/buttonBack"
+                        android:layout_width="35dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:src="@drawable/back_arrow_navigation_svgrepo_com__2_" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="9"
+                        android:gravity="center"
+                        android:paddingRight="20dp"
+                        android:text="İlan Detayları"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <com.github.siyamed.shapeimageview.CircularImageView
+                    android:id="@+id/profilephoto"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:onClick="profilegit"
+                    android:src="@drawable/account_svgrepo_com" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:gravity="fill"
+                    android:onClick="profilegit"
+                    android:text="Kullanıcı Adı"
+                    android:textSize="20sp" />
+
+
+                <ImageView
+                    android:id="@+id/kaydetbutton"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="0.8"
+                    android:onClick="kaydet"
+                    android:src="@drawable/save" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/profile_header_image"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:scaleType="centerCrop"
+
+           />
+
+            <TextView
+                android:id="@+id/ilanturu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00699f"
+                android:gravity="center"
+                android:text="İlan Türü"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/ProfileLabelStyle"
+                        android:background="#f8f8f8"
+                        android:padding="8dp"
+                        android:text="Kategori" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#D3D3D3" />
+
+                    <TextView
+                        android:id="@+id/kurulus"
+                        style="@style/ProfileValueStyle"
+                        android:padding="8dp"
+                        android:text="example" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#D3D3D3" />
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/ProfileLabelStyle"
+                        android:background="#f8f8f8"
+                        android:padding="8dp"
+                        android:text="Cins" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#D3D3D3" />
+
+                    <TextView
+                        android:id="@+id/konum"
+                        style="@style/ProfileValueStyle"
+                        android:padding="8dp"
+                        android:text="example" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#D3D3D3" />
+                <TableRow>
+
+                    <TextView
+                        style="@style/ProfileLabelStyle"
+                        android:background="#f8f8f8"
+                        android:padding="8dp"
+                        android:text="Yaş" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#D3D3D3" />
+
+                    <TextView
+                        android:id="@+id/yas"
+                        style="@style/ProfileValueStyle"
+                        android:padding="8dp"
+                        android:text="example" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#D3D3D3" />
+                <TableRow>
+
+                    <TextView
+                        style="@style/ProfileLabelStyle"
+                        android:background="#f8f8f8"
+                        android:padding="8dp"
+                        android:text="Cinsiyet" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#D3D3D3" />
+
+                    <TextView
+                        android:id="@+id/cinsiyet"
+                        style="@style/ProfileValueStyle"
+                        android:padding="8dp"
+                        android:text="example" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#D3D3D3" />
+                <TableRow>
+
+                    <TextView
+                        style="@style/ProfileLabelStyle"
+                        android:background="#f8f8f8"
+                        android:padding="8dp"
+                        android:text="Sağlık Durumu" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#D3D3D3" />
+
+                    <TextView
+                        android:id="@+id/saglikdurumu"
+                        style="@style/ProfileValueStyle"
+                        android:padding="8dp"
+                        android:text="example" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#D3D3D3" />
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/ProfileLabelStyle"
+                        android:background="#f8f8f8"
+                        android:padding="8dp"
+                        android:text="Tarih" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#D3D3D3" />
+
+                    <TextView
+                        android:id="@+id/tarih"
+                        style="@style/ProfileValueStyle"
+                        android:padding="8dp"
+                        android:text="example" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#D3D3D3" />
+                <TableRow>
+
+                    <TextView
+                        style="@style/ProfileLabelStyle"
+                        android:background="#f8f8f8"
+                        android:padding="8dp"
+                        android:text="Konum" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#D3D3D3" />
+
+                    <TextView
+                        android:id="@+id/konum2"
+                        style="@style/ProfileValueStyle"
+                        android:padding="8dp"
+                        android:text="Example City / Example " />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#D3D3D3" />
+            </TableLayout>
+
+
+            <TextView
+                android:id="@+id/ilanbaslik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Kedime Yuva!"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/aciklama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+
+                android:text="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" />
+
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="#00699f"
+                android:gravity="center"
+                android:text="İletişim Bilgileri"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/ProfileLabelStyle"
+                        android:background="#f8f8f8"
+                        android:padding="8dp"
+                        android:text="Telefon" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#D3D3D3" />
+
+                    <TextView
+                        android:id="@+id/telefon"
+                        style="@style/ProfileValueStyle"
+                        android:background="@color/white"
+                        android:padding="8dp"
+                        android:text="example" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#D3D3D3" />
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/ProfileLabelStyle"
+                        android:background="#f8f8f8"
+
+                        android:padding="8dp"
+                        android:text="E-Posta" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#D3D3D3" />
+
+                    <TextView
+                        android:id="@+id/epostatext"
+                        style="@style/ProfileValueStyle"
+                        android:padding="8dp"
+                        android:text="Jun 2020" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#D3D3D3" />
+
+            </TableLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/wp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/whatsapp_3670051"/>
+
+
+
+                <Button
+                    android:id="@+id/buttonWithIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:backgroundTint="#28A745"
+                    android:drawableLeft="@drawable/mesajsvgggg"
+                    android:padding="15dp"
+                    android:onClick="mesajgonder"
+                    android:text="Mesaj Gönder"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

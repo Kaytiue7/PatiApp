@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HesapGiris"
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/topMenu"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="1dp"
+            app:cardBackgroundColor="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/underline"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="124dp"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingBottom="5dp"
+                    android:src="@drawable/patiappisim" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="match_parent"
+            android:layout_height="201dp"
+            android:src="@drawable/girisekrani" />
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:fontFamily="@font/font123bold"
+            android:gravity="center"
+            android:text="PatiApp'a Hoş Geldin!"
+            android:textSize="30sp"
+  />
+
+        <EditText
+            android:id="@+id/editTextText8"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="44dp"
+            android:layout_marginRight="44dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edit"
+            android:drawableStart="@drawable/email2"
+            android:elevation="6dp"
+            android:hint="E-Posta"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editTextText1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="44dp"
+            android:layout_marginRight="44dp"
+            android:background="@drawable/edit"
+            android:drawableStart="@drawable/lock_alt_svgrepo_com__1_"
+            android:elevation="6dp"
+            android:hint="Şifre"
+            android:inputType="textPassword"
+           android:padding="10dp" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="25dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#00699f"
+            android:onClick="giris"
+            android:text="Giriş"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/underline"
+            android:gravity="center"
+            android:onClick="kayitol"
+            android:paddingBottom="2dp"
+            android:text="Buraya tıklayarak kayıt ol!"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

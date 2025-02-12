@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">  <!-- Şeklin dikdörtgen olduğunu belirtir -->
+    <solid android:color="@color/white"/> <!-- Arka plan rengi, projenizin colors.xml dosyasında tanımlı olmalı -->
+
+    <!-- Köşelerin yuvarlak olması için -->
+    <corners android:radius="10dp"/> <!-- Tüm köşeleri 10dp yarıçap ile yuvarlak yapar -->
+
+    <!-- Kenarlık eklemek için -->
+    <stroke
+        android:width="2dp"
+        android:color="#00699f"/> <!-- Kenarlık kalınlığı 2dp ve rengi #00699f olarak ayarlandı -->
+</shape>

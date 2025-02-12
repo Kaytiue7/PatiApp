@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/fav"
+        android:name="fav"
+        android:icon="@drawable/message"
+        android:title="Mesajlar" />
+    <item
+        android:id="@+id/paw"
+        android:name="paw"
+        android:title="İlanlar"
+        android:icon="@drawable/paw"
+        />
+
+    <item
+        android:id="@+id/add"
+        android:name="ekle"
+        android:title="İlan Yükle"
+        android:icon="@drawable/addad"
+        />
+    <item
+        android:id="@+id/search"
+        android:name="search"
+        android:title="Arama"
+        android:icon="@drawable/search"
+        />
+    <item
+        android:id="@+id/message"
+        android:name="message"
+        android:title="Hesabım"
+        android:icon="@drawable/hesabim"
+        />
+</menu>

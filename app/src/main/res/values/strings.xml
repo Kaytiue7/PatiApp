@@ -1,0 +1,323 @@
+<resources>
+    <string name="app_name">PatiApp</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string-array name="ilListeleme">
+        <item>Herhangi</item>
+        <item>İstanbul</item>
+        <item>Adana</item>
+        <item>Adıyaman</item>
+        <item>Afyonkarahisar</item>
+        <item>Ağrı</item>
+        <item>Amasya</item>
+        <item>Ankara</item>
+        <item>Antalya</item>
+        <item>Artvin</item>
+        <item>Aydın</item>
+        <item>Balıkesir</item>
+        <item>Bilecik</item>
+        <item>Bingöl</item>
+        <item>Bitlis</item>
+        <item>Bolu</item>
+        <item>Burdur</item>
+        <item>Bursa</item>
+        <item>Çanakkale</item>
+        <item>Çankırı</item>
+        <item>Çorum</item>
+        <item>Denizli</item>
+        <item>Diyarbakır</item>
+        <item>Edirne</item>
+        <item>Elazığ</item>
+        <item>Erzincan</item>
+        <item>Erzurum</item>
+        <item>Eskişehir</item>
+        <item>Gaziantep</item>
+        <item>Giresun</item>
+        <item>Gümüşhane</item>
+        <item>Hakkâri</item>
+        <item>Hatay</item>
+        <item>Iğdır</item>
+        <item>Isparta</item>
+        <item>İzmir</item>
+        <item>Kahramanmaraş</item>
+        <item>Karabük</item>
+        <item>Karaman</item>
+        <item>Kars</item>
+        <item>Kastamonu</item>
+        <item>Kayseri</item>
+        <item>Kırıkkale</item>
+        <item>Kırklareli</item>
+        <item>Kırşehir</item>
+        <item>Kilis</item>
+        <item>Kocaeli</item>
+        <item>Konya</item>
+        <item>Kütahya</item>
+        <item>Malatya</item>
+        <item>Manisa</item>
+        <item>Mardin</item>
+        <item>Mersin</item>
+        <item>Muğla</item>
+        <item>Muş</item>
+        <item>Nevşehir</item>
+        <item>Niğde</item>
+        <item>Ordu</item>
+        <item>Osmaniye</item>
+        <item>Rize</item>
+        <item>Sakarya</item>
+        <item>Samsun</item>
+        <item>Siirt</item>
+        <item>Sinop</item>
+        <item>Sivas</item>
+        <item>Tekirdağ</item>
+        <item>Tokat</item>
+        <item>Trabzon</item>
+        <item>Tunceli</item>
+        <item>Uşak</item>
+        <item>Van</item>
+        <item>Yalova</item>
+        <item>Yozgat</item>
+        <item>Zonguldak</item>
+
+
+    </string-array>
+    <string-array name="ilListeleme2">
+
+        <item>İstanbul</item>
+        <item>Adana</item>
+        <item>Adıyaman</item>
+        <item>Afyonkarahisar</item>
+        <item>Ağrı</item>
+        <item>Amasya</item>
+        <item>Ankara</item>
+        <item>Antalya</item>
+        <item>Artvin</item>
+        <item>Aydın</item>
+        <item>Balıkesir</item>
+        <item>Bilecik</item>
+        <item>Bingöl</item>
+        <item>Bitlis</item>
+        <item>Bolu</item>
+        <item>Burdur</item>
+        <item>Bursa</item>
+        <item>Çanakkale</item>
+        <item>Çankırı</item>
+        <item>Çorum</item>
+        <item>Denizli</item>
+        <item>Diyarbakır</item>
+        <item>Edirne</item>
+        <item>Elazığ</item>
+        <item>Erzincan</item>
+        <item>Erzurum</item>
+        <item>Eskişehir</item>
+        <item>Gaziantep</item>
+        <item>Giresun</item>
+        <item>Gümüşhane</item>
+        <item>Hakkâri</item>
+        <item>Hatay</item>
+        <item>Iğdır</item>
+        <item>Isparta</item>
+        <item>İzmir</item>
+        <item>Kahramanmaraş</item>
+        <item>Karabük</item>
+        <item>Karaman</item>
+        <item>Kars</item>
+        <item>Kastamonu</item>
+        <item>Kayseri</item>
+        <item>Kırıkkale</item>
+        <item>Kırklareli</item>
+        <item>Kırşehir</item>
+        <item>Kilis</item>
+        <item>Kocaeli</item>
+        <item>Konya</item>
+        <item>Kütahya</item>
+        <item>Malatya</item>
+        <item>Manisa</item>
+        <item>Mardin</item>
+        <item>Mersin</item>
+        <item>Muğla</item>
+        <item>Muş</item>
+        <item>Nevşehir</item>
+        <item>Niğde</item>
+        <item>Ordu</item>
+        <item>Osmaniye</item>
+        <item>Rize</item>
+        <item>Sakarya</item>
+        <item>Samsun</item>
+        <item>Siirt</item>
+        <item>Sinop</item>
+        <item>Sivas</item>
+        <item>Tekirdağ</item>
+        <item>Tokat</item>
+        <item>Trabzon</item>
+        <item>Tunceli</item>
+        <item>Uşak</item>
+        <item>Van</item>
+        <item>Yalova</item>
+        <item>Yozgat</item>
+        <item>Zonguldak</item>
+
+
+    </string-array>
+
+
+    <string-array name="cinsiyet">
+        <item>Dişi</item>
+        <item>Erkek</item>
+    </string-array>
+
+
+    <string-array name="ilanTurListele">
+        <item></item>
+        <item>Ücretsiz Sahiplendirme</item>
+        <item>Çiftleştirme İlanı</item>
+        <item>Mama Bağışı</item>
+    </string-array>
+    <string-array name="ilanTurListele2">
+        <item>Ücretsiz Sahiplendirme</item>
+        <item>Çiftleştirme İlanı</item>
+    </string-array>
+
+
+    <string-array name="kategoriListele">
+        <item>Herhangi</item>
+        <item>Kedi</item>
+        <item>Köpek</item>
+    </string-array>
+
+    <string-array name="kategoriListele2">
+        <item>Kedi</item>
+        <item>Köpek</item>
+    </string-array>
+
+    <string-array name="KedicinsListele2">
+        <item>Abyssinian</item>
+        <item>American Shorthair</item>
+        <item>Bengal</item>
+        <item>British Shorthair</item>
+        <item>Burmese</item>
+        <item>Calico</item>
+        <item>Maine Coon</item>
+        <item>Siamese</item>
+        <item>Sphynx</item>
+        <item>Persian</item>
+        <item>Ragdoll</item>
+        <item>Russian Blue</item>
+        <item>Scottish Fold</item>
+        <item>Van Kedisi</item>
+    </string-array>
+    <string-array name="KedicinsListele">
+        <item>Herhangi</item>
+        <item>Abyssinian</item>
+        <item>American Shorthair</item>
+        <item>Bengal</item>
+        <item>British Shorthair</item>
+        <item>Burmese</item>
+        <item>Calico</item>
+        <item>Maine Coon</item>
+        <item>Siamese</item>
+        <item>Sphynx</item>
+        <item>Persian</item>
+        <item>Ragdoll</item>
+        <item>Russian Blue</item>
+        <item>Scottish Fold</item>
+        <item>Van Kedisi</item>
+    </string-array>
+    <string-array name="KopekcinsListele2">
+        <item>Labrador Retriever</item>
+        <item>Golden Retriever</item>
+        <item>Alman Çoban Köpeği (German Shepherd)</item>
+        <item>Fransız Bulldog</item>
+        <item>Kangal</item>
+        <item>Bulldog</item>
+        <item>Poodle</item>
+        <item>Beagle</item>
+        <item>Rottweiler</item>
+        <item>Yorkshire Terrier</item>
+        <item>Boxer</item>
+        <item>Dachshund</item>
+        <item>Pembroke Welsh Corgi</item>
+        <item>Siberian Husky</item>
+        <item>Avustralya Çoban Köpeği (Australian Shepherd)</item>
+        <item>Büyük Dane (Great Dane)</item>
+        <item>Doberman Pinscher</item>
+        <item>Cavalier King Charles Spaniel</item>
+        <item>Shih Tzu</item>
+        <item>Boston Terrier</item>
+        <item>Havanese</item>
+        <item>Shetland Sheepdog</item>
+        <item>Bernese Mountain Dog</item>
+        <item>Pug</item>
+        <item>Maltese</item>
+        <item>Cocker Spaniel</item>
+        <item>Chihuahua</item>
+        <item>Border Collie</item>
+        <item>Mastiff</item>
+        <item>Vizsla</item>
+        <item>Bichon Frise</item>
+        <item>Akita</item>
+        <item>St. Bernard</item>
+        <item>American Staffordshire Terrier</item>
+        <item>Scottish Terrier</item>
+        <item>Whippet</item>
+        <item>Weimaraner</item>
+        <item>Rhodesian Ridgeback</item>
+        <item>Newfoundland</item>
+        <item>West Highland White Terrier</item>
+        <item>Chesapeake Bay Retriever</item>
+
+
+    </string-array>
+
+    <string-array name="KopekcinsListele">
+        <item>Herhangi</item>
+        <item>Labrador Retriever</item>
+        <item>Golden Retriever</item>
+        <item>Alman Çoban Köpeği (German Shepherd)</item>
+        <item>Fransız Bulldog</item>
+        <item>Kangal</item>
+        <item>Bulldog</item>
+        <item>Poodle</item>
+        <item>Beagle</item>
+        <item>Rottweiler</item>
+        <item>Yorkshire Terrier</item>
+        <item>Boxer</item>
+        <item>Dachshund</item>
+        <item>Pembroke Welsh Corgi</item>
+        <item>Siberian Husky</item>
+        <item>Avustralya Çoban Köpeği (Australian Shepherd)</item>
+        <item>Büyük Dane (Great Dane)</item>
+        <item>Doberman Pinscher</item>
+        <item>Cavalier King Charles Spaniel</item>
+        <item>Shih Tzu</item>
+        <item>Boston Terrier</item>
+        <item>Havanese</item>
+        <item>Shetland Sheepdog</item>
+        <item>Bernese Mountain Dog</item>
+        <item>Pug</item>
+        <item>Maltese</item>
+        <item>Cocker Spaniel</item>
+        <item>Chihuahua</item>
+        <item>Border Collie</item>
+        <item>Mastiff</item>
+        <item>Vizsla</item>
+        <item>Bichon Frise</item>
+        <item>Akita</item>
+        <item>St. Bernard</item>
+        <item>American Staffordshire Terrier</item>
+        <item>Scottish Terrier</item>
+        <item>Whippet</item>
+        <item>Weimaraner</item>
+        <item>Rhodesian Ridgeback</item>
+        <item>Newfoundland</item>
+        <item>West Highland White Terrier</item>
+        <item>Chesapeake Bay Retriever</item>
+
+
+    </string-array>
+</resources>

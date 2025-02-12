@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MesajEkle">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/topMenu"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="20dp"
+        app:cardBackgroundColor="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="horizontal"
+            android:background="@drawable/underline">
+
+            <ImageView
+                android:id="@+id/buttonBack"
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:src="@drawable/back_arrow_navigation_svgrepo_com__2_" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="9"
+                android:gravity="center"
+                android:paddingRight="20dp"
+                android:text=""
+                android:textSize="18sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/editTextText5"
+        android:layout_width="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/edit"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:ems="10"
+        android:drawableStart="@drawable/account_management_svgrepo_com"
+        android:hint="Gönderilen Kişi: "
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editTextText6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:gravity="top"
+        android:background="@drawable/edit"
+        android:hint="Konu:"
+        android:inputType="textLongMessage" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/edit"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Mesaj"
+        android:inputType="textLongMessage"
+        android:padding="20dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#0b57d0"
+        android:drawableStart="@drawable/paper_plane_svgrepo_com"
+        android:onClick="mesajj"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:text="Gönder"
+        android:textSize="20sp" />
+</LinearLayout>

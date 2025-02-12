@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e8e8e8"
+    android:orientation="vertical"
+    tools:context=".BarinakHesapOlustur">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/topMenu"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/underline"
+                app:cardBackgroundColor="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/buttonBack"
+                        android:layout_width="35dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="buttonBack"
+                        android:paddingLeft="10dp"
+                        android:src="@drawable/back_arrow_navigation_svgrepo_com__2_" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="9"
+                        android:gravity="center"
+                        android:text="Hesap Oluştur"
+                        android:paddingRight="20dp"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="match_parent"
+                android:layout_height="278dp"
+                android:layout_marginBottom="40dp"
+                android:src="@drawable/photo_download_svgrepo_com" />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <EditText
+                        android:id="@+id/editTextText8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="14dp"
+                        android:background="@drawable/edit"
+                        android:drawableStart="@drawable/company_svgrepo_com"
+                        android:elevation="6dp"
+                        android:padding="10dp"
+                        android:hint="Kurumun İsmi"
+                        android:inputType="text"
+                        android:paddingStart="4dp" />
+
+                    <TextView
+                        android:id="@+id/textView29"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginTop="14dp"
+                        android:layout_marginEnd="14dp"
+                        android:layout_marginRight="14dp"
+                        android:background="@drawable/underline2"
+                        android:paddingStart="4dp"
+                        android:paddingBottom="4dp"
+                        android:text="Kuruluş Yılı"
+                        android:textSize="18sp"
+                        android:textColor="@color/black" />
+
+
+                    <Button
+                        android:id="@+id/editTextDate"
+                        style="@style/Widget.AppCompat.Spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginEnd="14dp"
+                        android:layout_marginRight="14dp"
+                        android:layout_marginBottom="14dp"
+                        android:hint="MAY 10 2024"
+                        android:inputType="date"
+                        android:onClick="openDatePicker"
+                        android:paddingStart="4dp"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/editTextText15"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_margin="14dp"
+                        android:background="@drawable/edit"
+                        android:elevation="6dp"
+                        android:gravity="top"
+
+                        android:hint="Kurumun Amaç ve İlkeleri"
+                        android:inputType="text"
+                        android:padding="10dp" />
+
+                    <EditText
+                        android:id="@+id/editTextTextEmailAddress2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="14dp"
+                        android:background="@drawable/edit"
+                        android:drawableStart="@drawable/email2"                        android:elevation="6dp"
+                        android:hint="E-Posta"
+                        android:inputType="textEmailAddress"
+                        android:paddingStart="4dp"
+                        android:padding="10dp"
+                        />
+
+                    <EditText
+                        android:id="@+id/editTextTextPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="14dp"
+                        android:background="@drawable/edit"
+                        android:drawableStart="@drawable/lock_alt_svgrepo_com__1_"
+
+                        android:padding="10dp"
+                        android:elevation="6dp"
+                        android:hint="Şifre oluşturun"
+                        android:inputType="textPassword"
+                        android:paddingStart="4dp"
+                        android:textAlignment="textStart"
+
+                        />
+
+
+
+                    <EditText
+                        android:id="@+id/editTextText20"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:padding="10dp"
+                        android:layout_margin="14dp"
+                        android:background="@drawable/edit"
+                        android:elevation="6dp"
+                        android:gravity="top"
+                        android:hint="Açık Adres"
+                        android:inputType="text"
+                        android:paddingStart="4dp"
+                        />
+
+                    <EditText
+                        android:id="@+id/editTextPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_margin="14dp"
+                        android:background="@drawable/edit"
+
+
+                        android:drawableStart="@drawable/phone"
+                        android:elevation="6dp"
+                        android:hint="Telefon Numarası"
+                        android:inputType="phone"
+                        android:paddingStart="4dp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:layout_width="360dp"
+                        android:layout_height="65dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="14dp"
+                        android:layout_marginTop="50dp"
+
+                        android:elevation="6dp"
+                        android:paddingStart="4dp">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/autoCompleteTextView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:background="@drawable/edit"
+                            android:drawableStart="@drawable/pin"
+                            android:inputType="none"
+                            android:text="Şehir" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <EditText
+                        android:id="@+id/editTextText18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="14dp"
+                        android:background="@drawable/edit"
+                        android:padding="10dp"
+
+                        android:drawableStart="@drawable/pin"
+                        android:elevation="6dp"
+                        android:hint="İlçe"
+                        android:inputType="text"
+                        android:paddingStart="4dp"
+
+
+                        />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_gravity="center"
+                android:layout_margin="40dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="#2196F3"
+                android:onClick="kayit"
+                android:text="Kayıt Ol"
+                android:textAllCaps="false"
+                android:textSize="21sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
